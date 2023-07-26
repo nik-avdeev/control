@@ -19,12 +19,12 @@ public class Task3_Main {
         Random random = new Random();
 
         for (int i = 0; i < numBoxes; i++) {
-            int x = random.nextInt(10) + 1; // Генерируем случайные значения от 1 до 10
+            int x = random.nextInt(10) + 1;
             int y = random.nextInt(10) + 1;
             int z = random.nextInt(10) + 1;
             String[] types = {"BOX", "ENVELOP", "CUBE"};
             String type = types[random.nextInt(types.length)];
-            int weight = random.nextInt(100) + 1; // Генерируем случайные значения от 1 до 100
+            int weight = random.nextInt(100) + 1;
 
             Task3_Box box = new Task3_Box(x, y, z, type, weight);
             boxes.add(box);
